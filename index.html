@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+
+<head>
+    <title>DIAMOND FASHION</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/star-rating.min.css" media="all" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,300italic,400italic,700' rel='stylesheet' type='text/css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+    <script src="js/angular-ui-router.js"></script>
+    <script src="js/star-rating.min.js" type="text/javascript"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+    <script>
+        var myapp = angular.module('myapp', ["ui.router"]);
+        myapp.config(function($stateProvider, $urlRouterProvider){
+
+            // For any unmatched url, send to /route1
+            $urlRouterProvider.otherwise("/home");
+
+            $stateProvider
+                    .state('home', {
+                        url: "/home",
+                        templateUrl: "home.html"
+                    })
+                    /*.state('route1.list', {
+                        url: "/list",
+                        templateUrl: "route1.list.html",
+                        controller: function($scope){
+                            $scope.items = ["A", "List", "Of", "Items"];
+                        }
+                    })*/
+
+                    .state('route2', {
+                        url: "/route2",
+                        templateUrl: "route2.html"
+                    });
+                    /*.state('route2.list', {
+                        url: "/list",
+                        templateUrl: "route2.list.html",
+                        controller: function($scope){
+                            $scope.things = ["A", "Set", "Of", "Things"];
+                        }
+                    })*/
+        })
+    </script>
+
+</head>
+
+<body>
+
+
+
+<header>
+    <nav class="navbar navbar-default container">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand logo" href="#">
+                    <span><img alt="Brand" src="../images/brand.png" style="height: 29px"></span>
+                    DIAMOND FASHION
+                </a>
+                <div class="input-group ">
+                    <input type="text" class="form-control" placeholder="Search item">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default " type="button"><i class="fa fa-search"></i></button>
+                    </span>
+                </div>
+                <div class="navbar-right">
+                    <a class="panel-highlight"><i class="fa fa-user"></i></a>
+                    <a class="panel-highlight"><i class="fa fa-lock"></i></a>
+                    <a class="panel-highlight"><i class="fa fa-envelope"></i></a>
+                    <a class="cart"><i class="fa fa-shopping-cart fa-2x"></i> <span class="badge">3</span></a>
+
+                </div>
+
+            </div>
+        </div>
+
+    </nav>
+    <nav class="container navbar">
+        <div class="container-fluid">
+                <nav class="navbar" style="display: flex">
+                    <ul class="nav nav-tabs menu">
+                        <li><a ui-sref="home">Home</a></li>
+                        <li><a ui-sref="route2">Shop</a></li>
+                        <li><a ui-sref="route3">Pages</a></li>
+                        <li><a ui-sref="route4">Blog</a></li>
+                        <li><a ui-sref="route5">Contact Us</a></li>
+                    </ul>
+                    <div class="navbar-right social">
+                        <a class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a class="google-plus"><i class="fa fa-google-plus"></i></a>
+                        <a class="dribbble"><i class="fa fa-dribbble"></i></a>
+                        <a class="linkedin"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </nav>
+        </div>
+    </nav>
+</header>
+<main ui-view>
+
+</main>
+
+
+
+
+
+
+
+<script src="../js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
