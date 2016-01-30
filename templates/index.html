@@ -90,11 +90,49 @@
         <div class="container-fluid">
                 <nav class="navbar" style="display: flex">
                     <ul class="nav nav-tabs menu">
-                        <li><a ui-sref="home">Home</a></li>
-                        <li><a ui-sref="route2">Shop</a></li>
-                        <li><a ui-sref="route3">Pages</a></li>
-                        <li><a ui-sref="route4">Blog</a></li>
-                        <li><a ui-sref="route5">Contact Us</a></li>
+                        <li>
+                            <a class="menu-item" ui-sref="home">Home</a>
+                        </li>
+                        <li>
+                            <a class="menu-item" ui-sref="route2">Shop</a>
+                            <div class="dropdown-list container column3">
+                                <div class="row">
+                                    <ul class="column_1">
+                                        <li><a>Products Details</a></li>
+                                    </ul>
+                                    <ul class="column_2">
+                                        <li><a>Men Suits</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="menu-item" ui-sref="route3">Pages</a>
+                            <div class="dropdown-list container column3">
+                                <div class="row">
+                                    <ul class="column_1">
+                                        <li><a>Woomen Suits</a></li>
+                                    </ul>
+                                    <ul class="column_2">
+                                        <li><a>Men Suits</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="menu-item" ui-sref="route4">Blog</a>
+                            <div class="dropdown-list container column3">
+                                <div class="row">
+                                    <ul class="column_1">
+                                        <li><a>Blog Details</a></li>
+                                    </ul>
+                                    <ul class="column_2">
+                                        <li><a>Mens Suits</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a class="menu-item" ui-sref="route5">Contact Us</a></li>
                     </ul>
                     <div class="navbar-right social">
                         <a class="facebook"><i class="fa fa-facebook"></i></a>
@@ -110,6 +148,90 @@
 <main ui-view>
 
 </main>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                    <div class="col-md-7">
+                        <div class="dobble-row">
+                            <h4>About diamond Fashion</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetadipiscing elitnon ligula quis orcidapibus efficitur. Sed ex elit,maximu
+                                consequat, porttitor a mauris.</p>
+                            <div class="contact info">
+                                <a><i class="fa fa-chevron-right"></i>Read More</a>
+                                <a><i class="fa fa-map-marker"></i><strong>Address :</strong> 34234 Golf Course Road, Avenue US</a>
+                                <a><i class="fa fa-phone"></i><strong>Phone :</strong> +1 8098766543</a>
+                                <a><i class="fa fa-envelope "></i><strong>Email :</strong> mail@yourdomain.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="dobble-row">
+                            <h4>why choose us?</h4>
+                            <div class="contact">
+                                <a><i class="fa marg fa-caret-right"></i>Duis egestas tortor eleifend felis</a>
+                                <a><i class="fa marg fa-caret-right"></i>Vestibulum vitae lacus at augue</a>
+                                <a><i class="fa marg fa-caret-right"></i>Duis quis augue a leo consectetur</a>
+                                <a><i class="fa marg fa-caret-right"></i>Nam blandit tortor vehicula neque</a>
+                                <a><i class="fa marg fa-caret-right"></i>Proin fringilla quam vel velit rutrum</a>
+                                <a><i class="fa marg fa-caret-right"></i>Aliquam bibendum tortor quis</a>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-5">
+                <div class="col-md-5">
+                    <div class="dobble-row">
+                        <h4>useful links</h4>
+                        <a class="us-links">My Account</a>
+                        <a class="us-links">Login</a>
+                        <a class="us-links">My Wishlist</a>
+                        <a class="us-links">My Orders</a>
+                        <a class="us-links">Return Policy</a>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="dobble-row nwlt">
+                        <h4>newsletter</h4>
+                        <input type="text" class="form-control" placeholder="Email Id">
+                        <div class="social">
+                            <a class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a class="google-plus"><i class="fa fa-google-plus"></i></a>
+                            <a class="dribbble"><i class="fa fa-dribbble"></i></a>
+                            <a class="linkedin"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                        <div class="cards">
+                            <img src="../images/credit-card-icons1.png">
+                            <img src="../images/credit-card-icons2.png">
+                            <img src="../images/credit-card-icons3.png">
+                            <img src="../images/credit-card-icons4.png">
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <ul class="nav nav-pills">
+                    <li role="presentation"><a href="#">Privacy & Cookies</a></li>
+                    <li role="presentation"><a href="#">Terms & Conditions</a></li>
+                    <li role="presentation"><a href="#">About Us</a></li>
+                    <li role="presentation"><a href="#">Return Policy</a></li>
+                    <li role="presentation"><a href="#">Supply Chain</a></li>
+                    <li role="presentation" class="disabled"><a href="#">Copyright © 2015  All Rights Reserved</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 
