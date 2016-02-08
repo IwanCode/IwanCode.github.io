@@ -163,6 +163,24 @@
         -moz-appearance: none;
         appearance: none;
         font-weight: 400; }
+.shop .products .d-goods-gallery {
+  margin-right: -30px !important; }
+  .shop .products .d-goods-gallery .gallery-item {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: auto; }
+  .shop .products .d-goods-gallery .gallery-content {
+    margin-left: 15px; }
+  .shop .products .d-goods-gallery .shop-menu {
+    display: flex;
+    flex-wrap: wrap; }
+    .shop .products .d-goods-gallery .shop-menu .col-md2 {
+      width: 33.3333%;
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px; }
 
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -455,37 +473,38 @@ main .poster .container .nav-content p:before {
 main .poster .container .nav-content p:after {
   left: 100%;
   margin-left: 8px; }
-main .poster .container .new-content .gallery {
+
+.new-content .gallery {
   margin-bottom: 56px; }
-  main .poster .container .new-content .gallery p {
+  .new-content .gallery p {
     margin-top: 16px;
     margin-bottom: 15px;
     font-family: "Open Sans Regular"; }
-  main .poster .container .new-content .gallery .rating-container {
+  .new-content .gallery .rating-container {
     color: #aba8a8; }
-  main .poster .container .new-content .gallery .star-rating {
+  .new-content .gallery .star-rating {
     font-size: 13px;
     display: inline-block;
     float: right; }
-  main .poster .container .new-content .gallery .rating-stars {
+  .new-content .gallery .rating-stars {
     color: black !important; }
-  main .poster .container .new-content .gallery .price {
+  .new-content .gallery .price {
     color: #e77075; }
-  main .poster .container .new-content .gallery a {
+  .new-content .gallery a {
     font-weight: bold;
     color: black;
     text-decoration: none; }
-  main .poster .container .new-content .gallery .stars {
+  .new-content .gallery .stars {
     display: inline-block;
     float: right; }
-main .poster .container .new-content .gallery-item {
+.new-content .gallery-item {
   cursor: pointer;
   position: relative;
   width: 270px;
   height: 346px; }
-  main .poster .container .new-content .gallery-item img {
+  .new-content .gallery-item img {
     width: 100%;
-    height: 100%; }
+    height: auto; }
 
 footer {
   background-color: #eee; }
