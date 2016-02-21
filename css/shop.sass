@@ -1,3 +1,4 @@
+$galleryC: #dfdfdf
 .shop
   .products
     .col-md-3, .col-sm-3
@@ -65,14 +66,11 @@
               //display: block
               //background-color: #122b40
 
-
             a
               text-decoration: none
               color: #887f80
               text-transform: uppercase
               font-size: 12px
-              //position: relative
-
         .colors
           li
             display: inline-block
@@ -82,7 +80,6 @@
               height: 30px
               width: 30px
               margin-right: 5px
-
       .price_filter
         .ui-slider
           margin-top: 40px
@@ -141,78 +138,232 @@
         img
           width: 100%
           height: auto
-    .d-goods-header
+.d-goods-header
+  display: flex
+  height: 59px
+  margin-top: 10px
+  span
+    margin-right: 5px
+    font-family: $sansBold
+  .left-header
+    display: flex
+    align-items: center
+    margin-left: 30px
+    #grid3, #grid1
+      width: 40px
+      height: 40px
       display: flex
-      height: 59px
-      margin-top: 10px
-      span
-        margin-right: 5px
-        font-family: $sansBold
-      .left-header
-        display: flex
-        align-items: center
-        margin-left: 30px
-        #grid3, #grid1
-          width: 40px
-          height: 40px
-          display: flex
-          margin-left: 10px
-          justify-content: center
-          align-items: center
-          text-decoration: none
-          cursor: pointer
-          border: 1px solid #ececec
-          transition: 0.6s
-          color: #c2c2c2
-          font-size: 20px
-          border-radius: 3px
-          i
-            margin-bottom: -2px
-        a:hover
-          background-color: #e77075
-          i
-            color: white
-
-      .right-header
-        display: flex
-        height: 59px
-        align-items: center
-        position: absolute
-        right: 0
-        top: 10px
-
-        label
-          overflow: hidden
-          margin-bottom: 0
-          background: url("../images/arrow.png") no-repeat 95%
-          margin-left: 15px
-          select
-            height: 40px
-            width: 180px
-            background: transparent
-            padding: 6px 18px 6px 12px
-            -webkit-appearance: none
-            -moz-appearance: none
-            appearance: none
-            font-weight: 400
-    .d-goods-gallery
-      margin-right: -30px !important
+      margin-left: 10px
+      justify-content: center
+      align-items: center
+      text-decoration: none
+      cursor: pointer
+      border: 1px solid #ececec
+      transition: 0.4s
+      color: #c2c2c2
+      font-size: 20px
+      border-radius: 3px
+      outline: none
+      i
+        margin-bottom: -2px
+    #grid3
+      background-color: #e77075
+      color: white
+    a:hover
+      background-color: #c2c2c2 !important
+      i
+        color: white
+  .right-header
+    display: flex
+    height: 59px
+    align-items: center
+    position: absolute
+    right: 0
+    top: 10px
+    label
+      overflow: hidden
+      margin-bottom: 0
+      background: url("../images/arrow.png") no-repeat 95%
+      margin-left: 15px
+      select
+        height: 40px
+        width: 180px
+        background: transparent
+        padding: 6px 18px 6px 12px
+        -webkit-appearance: none
+        -moz-appearance: none
+        appearance: none
+        font-weight: 400
+.d-goods-gallery
+  margin-right: -30px !important
+  .gallery-item
+    cursor: pointer
+    position: relative
+    width: 100%
+    height: auto
+  .gallery-content
+    margin-left: 15px
+  .shop-menu
+    display: flex
+    flex-wrap: wrap
+    .col-md2
+      //shop.list3
+      width: 33.3333%
+      position: relative
+      min-height: 1px
+      padding-right: 15px
+      padding-left: 15px
+      .btn-screen, .btn-like, .btn-cart
+        width: 40px
+        height: 40px
+        color: white
+        padding: 10px 11px
+        float: right
+        margin-left: 10px
+        margin-top: 10px
+        background-color: #2f2f2f
+        i
+          font-size: 16px
       .gallery-item
-        cursor: pointer
-        position: relative
+        border: 1px solid transparent
+        .view
+          display: flex
+          flex-direction: column-reverse
+          position: absolute
+          margin-left: 10px
+          margin-top: 10px
+          opacity: 0
+          transition: 0.2s ease-out
+          transition-delay: 0.1s
+      .gallery-item::before
         width: 100%
-        height: auto
-      .gallery-content
-        margin-left: 15px
-      .shop-menu
-        display: flex
-        flex-wrap: wrap
-        .col-md2
-          width: 33.3333%
-          position: relative
-          min-height: 1px
-          padding-right: 15px
-          padding-left: 15px
+        height: 100%
+        position: absolute
+        background: linear-gradient(to bottom, transparent, #4c4d4c)
+        display: block
+        content: ''
+        opacity: 0
+        transition: .4s
+      .gallery-item:hover
+        border-color: #e77075
+        -o-transition: color .4s ease-out, background .2s ease-in
+        -ms-transition: color .4s ease-out, background .2s ease-in
+        -moz-transition: color .4s ease-out, background .2s ease-in
+        -webkit-transition: color .4s ease-out, background .2s ease-in
+        transition: color .4s ease-out, background .2s ease-in
+        box-shadow: 0 0 5px rgba(231,112,117,0.6)
+        .view
+          opacity: 1
+        &::before
+          opacity: 0.2
+        .btn-like:hover, .btn-screen:hover, .btn-cart:hover
+          background-color: #e77075
+          -o-transition: color .4s ease-out, background .2s ease-in
+          -ms-transition: color .4s ease-out, background .2s ease-in
+          -moz-transition: color .4s ease-out, background .2s ease-in
+          -webkit-transition: color .4s ease-out, background .2s ease-in
+          transition: color .4s ease-out, background .2s ease-in
+    .col-md1
+      //shop.list1
+      width: 100%
+      position: relative
+      min-height: 1px
+      padding-right: 15px
+      padding-left: 15px
+      .gallery
+        display: inline-block
+        width: 100%
+        height: 292px
+        overflow: hidden
+        margin-bottom: 30px
+        border: 1px solid $galleryC
+        transition: 0.4s
+        .gallery-item
+          width: 270px
+          display: inline-block
+          float: left
+          border-right: 1px solid $galleryC
+          transition: 0.4s
+        section
+          width: calc(100% - 272px)
+          height: 100%
+          float: left
+          padding: 30px
+          h4
+            font-family: $sansRegul
+            font-size: 22px
+            margin-top: 0
+          .price
+            font-size: 18px
+            margin-top: 22px
+            display: block
+          .star-rating
+            float: none
+          span
+            font-size: 12px
+            text-transform: uppercase
+            color: #e77075
+            margin-left: 15px
+            vertical-align: middle
+            font-family: $sansBold, sans-serif
+          p
+            font-size: 14px
+            font-family: $sansRegul, sans-serif
+            color: #848484
+            margin-top: 22px
+            margin-bottom: 26px
+          button
+            width: 180px
+            height: 40px
+            font-family: $sansRegul, sans-serif
+            text-transform: uppercase
+            color: #848484
+            background-color: white
+            border-radius: 25px
+            border-color: #848484
+            outline: none
+            position: relative
+          .btn-screen, .btn-like
+            width: 40px
+            height: 40px
+            color: white
+            padding: 10px 11px
+            float: right
+            margin-left: 10px
+            background-color: #2f2f2f
+            i
+              font-size: 16px
+      .gallery:hover
+        $galleryC: #e77075
+        border-color: $galleryC
+        box-shadow: 0 0 5px rgba(231,112,117,0.6)
+        .gallery-item
+          border-right-color: $galleryC
+        button:hover
+          background-color: $galleryC
+          color: white
+          border-color: $galleryC
+          -o-transition: color .4s ease-out, background .2s ease-in
+          -ms-transition: color .4s ease-out, background .2s ease-in
+          -moz-transition: color .4s ease-out, background .2s ease-in
+          -webkit-transition: color .4s ease-out, background .2s ease-in
+          transition: color .4s ease-out, background .2s ease-in
+        .btn-like:hover, .btn-screen:hover
+          background-color: $galleryC
+          -o-transition: color .4s ease-out, background .2s ease-in
+          -ms-transition: color .4s ease-out, background .2s ease-in
+          -moz-transition: color .4s ease-out, background .2s ease-in
+          -webkit-transition: color .4s ease-out, background .2s ease-in
+          transition: color .4s ease-out, background .2s ease-in
+
+// ===== pages.html =======
+.pages
+  .pages-col
+    width: 100%
+    .left-header
+      margin-left: 0
+
+
 
 
 
