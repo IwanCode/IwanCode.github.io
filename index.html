@@ -21,40 +21,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 
     <![endif]-->
-    <script>
-        var myapp = angular.module('myapp', ["ui.router"]);
-        myapp.config(function($stateProvider, $urlRouterProvider){
-
-            // For any unmatched url, send to /route1
-            $urlRouterProvider.otherwise("/home");
-
-            $stateProvider
-                    .state('home', {
-                        url: "/home",
-                        templateUrl: "home.html"
-                    })
-                    /*.state('route1.list', {
-                        url: "/list",
-                        templateUrl: "route1.list.html",
-                        controller: function($scope){
-                            $scope.items = ["A", "List", "Of", "Items"];
-                        }
-                    })*/
-
-                    .state('shop', {
-                        url: "/shop",
-                        templateUrl: "shop.html"
-                    });
-                    /*.state('route2.list', {
-                        url: "/list",
-                        templateUrl: "route2.list.html",
-                        controller: function($scope){
-                            $scope.things = ["A", "Set", "Of", "Things"];
-                        }
-                    })*/
-        })
-    </script>
-
+    <script src="../js/app.js"></script>
 </head>
 
 <body>
@@ -108,7 +75,7 @@
                             </div>
                         </li>
                         <li>
-                            <a class="menu-item" ui-sref="route3">Pages</a>
+                            <a class="menu-item" ui-sref="pages">Pages</a>
                             <div class="dropdown-list container column3">
                                 <div class="row">
                                     <ul class="column_1">
@@ -241,6 +208,9 @@
 
 
 <script src="../js/bootstrap.min.js"></script>
+<script>
+    $(".gallery").find('input').rating();
+</script>
 
 </body>
 

@@ -1,0 +1,47 @@
+<div class="pages">
+    <div class="container">
+        <div class="row">
+            <div class="pages-col">
+                <div class="col-md-12">
+                    <div class="d-goods-header row">
+                        <div class="left-header">
+                            <span>SORT BY:</span>
+                            <a ui-sref=".list3" id="grid3">
+                                <i class="fa fa-th"></i>
+                            </a>
+                            <a ui-sref=".list1" id="grid1">
+                                <i class="fa fa-th-list"></i>
+                            </a>
+                        </div>
+                        <div class="right-header">
+                            <span>SHOW:</span>
+                            <label>
+                                <select class="form-control">
+                                    <option>15 items per page</option>
+                                    <option>12 items per page</option>
+                                    <option>9 items per page</option>
+                                </select>
+                            </label>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="d-goods-gallery row">
+                    <div class="gallery-content">
+                        <div ui-view class="new-content">
+                            <!-- content-->
+
+
+                        </div>
+                    </div>
+                    <div class="d-goods-arrow">
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
