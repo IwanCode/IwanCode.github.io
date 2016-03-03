@@ -1,0 +1,263 @@
+.details
+  .current-goods
+    margin-bottom: 40px
+    margin-top: 25px
+    .gallery
+      display: flex
+      .gallery-item
+        width: 470px
+        height: 386px
+        overflow: hidden
+        display: inline-block
+        border: 1px solid #dfdfdf
+        position: relative
+        img
+          width: 100%
+          position: absolute
+          top: -40%
+      .gallery-wrapper
+        display: flex
+        ul
+          display: flex
+          align-content: space-between
+          flex-wrap: wrap
+          width: 90px
+          margin-left: 10px
+          margin-right: 10px
+          list-style: none
+          padding-left: 0
+          margin-bottom: 0
+          li
+            height: 90px
+            overflow: hidden
+            border: 1px solid #dfdfdf
+          a
+            img
+              width: 100%
+
+    .good-shop
+      margin-left: 15px
+      height: 386px
+      border-bottom: 1px solid #ddd
+      h3
+        font-family: $sansRegul
+        font-size: 28px
+        text-transform: uppercase
+        margin-top: 0
+      p
+        color: #a8a8a8
+      > a
+        display: block
+      > span
+        font-size: 12px
+        text-transform: uppercase
+        color: #e77075
+        margin-left: 15px
+        vertical-align: middle
+        font-family: "Open Sans Semibold", sans-serif
+      .rating-container
+        color: #aba8a8
+      .star-rating
+        font-size: 13px
+        display: inline-block
+      .rating-stars
+        color: black
+      section
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 20px
+        a
+          color: #b8b8b8
+          margin-left: 20px
+        .qty-section
+          display: flex
+          align-items: center
+          select
+            width: 90px
+            height: 36px
+            + span
+              text-decoration: line-through
+              margin-left: 20px
+
+        span
+          font-size: 20px
+          margin-left: 10px
+        //text-decoration:
+        .price
+          font-size: 35px
+          font-family: $sansBold
+          color: #e77075
+      .form
+        margin-top: 10px
+        padding-bottom: 30px
+        margin-bottom: 25px
+        display: flex
+        justify-content: space-between
+        border-bottom: 1px solid #ddd
+        label
+          margin-bottom: 0
+        .colr
+          width: 190px
+          height: 38px
+        .sze
+          width: 136px
+          height: 38px
+
+        > a
+          vertical-align: top
+          width: 170px
+          height: 38px
+          i
+            margin-right: 10px
+            vertical-align: middle
+      .social
+        margin-top: 9px
+        span
+          margin-left: 15px
+          margin-right: 15px
+          color: #2f2f2f
+  .addcart
+    width: 180px
+    height: 40px
+    font-family: "Open Sans Regular", sans-serif
+    text-transform: uppercase
+    color: #d8d8d8
+    background-color: #2f2f2f
+    border-radius: 25px
+    border-color: #2f2f2f
+    outline: none
+    position: relative
+    &:hover
+      background-color: $galleryC
+      color: black
+
+  .current-goods-info
+    .items1
+      cursor: pointer
+      a
+        color: #c2c2c2
+      .active
+        a
+          color: #2f2f2f !important
+    #second
+      form
+        position: relative
+        p
+          margin-top: 24px
+          margin-bottom: 24px
+          font-size: 16px
+          font-family: $sansBold
+        label
+          width: 48%
+          max-width: 266px
+          margin-bottom: 30px
+        .form-control
+          &::-moz-placeholder
+            color: #848484
+            font-size: 14px
+            font-family: $sansBold, sans-serif
+          &::-webkit-input-placeholder
+            color: #848484
+            font-size: 14px
+            font-family: $sansBold, sans-serif
+
+        textarea::-webkit-input-placeholder
+          color: #848484
+          font-size: 14px
+          font-family: $sansBold, sans-serif
+        textarea
+          min-height: 118px
+          margin-bottom: 30px
+        section
+          position: relative
+        .rating-container
+          color: #aba8a8
+        .star-rating
+          font-size: 16px
+          display: inline-block
+          position: absolute
+          right: 0
+          top: calc(50% - 12px)
+        .rating-stars
+          color: black
+.comments-content
+  article
+    margin-left: -15px
+  a
+    display: block
+    padding: 0 20px
+    color: #848484
+    text-decoration: none
+    &:hover
+      color: #848484
+      text-decoration: none
+    .media
+      padding: 15px 0
+      img
+        width: 50px
+        height: auto
+      .media-top
+        display: flex
+        justify-content: space-between
+        margin-bottom: 10px
+        .rating-container
+          color: #aba8a8
+        .star-rating
+          font-size: 13px
+          display: inline-block
+        .rating-stars
+          color: black
+        .media-meta
+          display: inline-block
+      .media-content
+        margin-bottom: 10px
+        font-family: $sansRegul
+
+      .user-name
+        h3
+          font-size: 14px
+          font-family: $sansBold
+          color: #2f2f2f
+          margin: 0
+      //.comments-content
+      //  article
+      //    margin-left: -15px
+      //  a
+      //    display: block
+      //    padding: 0 20px
+      //    color: #848484
+      //    text-decoration: none
+      //    &:hover
+      //      color: #848484
+      //      text-decoration: none
+      //    .media
+      //      padding: 15px 0
+      //      img
+      //        width: 50px
+      //        height: auto
+      //      .media-top
+      //        display: flex
+      //        justify-content: space-between
+      //        margin-bottom: 10px
+      //        .rating-container
+      //          color: #aba8a8
+      //        .star-rating
+      //          font-size: 13px
+      //          display: inline-block
+      //        .rating-stars
+      //          color: black
+      //        .media-meta
+      //          display: inline-block
+      //      .media-content
+      //        margin-bottom: 10px
+      //        font-family: $sansRegul
+      //
+      //      .user-name
+      //        h3
+      //          font-size: 14px
+      //          font-family: $sansBold
+      //          color: #2f2f2f
+      //          margin: 0
+
+

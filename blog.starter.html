@@ -1,0 +1,88 @@
+<article class="blog_feed media">
+    <div class="media-left">
+
+        <span class="data">25 AUG</span>
+        <span>
+            <img id="img1" src="images/blog1.jpg">
+        </span>
+    </div>
+    <div class="media-body">
+        <div class="media-content">
+            <h3>Vivamus finibus ante</h3>
+            <div class="media-write">
+                <a class="pull-right"><i class="fa fa-comments"></i>58 commets</a>
+                <a class="pull-right"><i class="fa fa-thumbs-o-up"></i>38 review</a>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non ligula quis orci dapibus efficitur.
+                Sed ex elit, ultrices et maximus consequat, porttitor a mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                Fusce non facilisis ipsudignissim orci dictum leo tempus, sit amet fringilla purus fringla.
+                Vivamus id ex suscipit, euismod dui sit amet, sagittis neque. Maecenas diam augue, interdum quis velit ut,
+            </p>
+            <button type="submit" class="btn btn-default">read more</button>
+        </div>
+    </div>
+</article>
+<article class="blog_feed media">
+    <div class="media-left">
+
+        <span class="data">25 AUG</span>
+        <span>
+            <img id="img2" src="images/blog2.jpg">
+        </span>
+    </div>
+    <div class="media-body">
+        <div class="media-content">
+            <h3>Vivamus finibus ante</h3>
+            <div class="media-write">
+                <a class="pull-right"><i class="fa fa-comments"></i>58 commets</a>
+                <a class="pull-right"><i class="fa fa-thumbs-o-up"></i>38 review</a>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non ligula quis orci dapibus efficitur.
+                Sed ex elit, ultrices et maximus consequat, porttitor a mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                Fusce non facilisis ipsudignissim orci dictum leo tempus, sit amet fringilla purus fringla.
+                Vivamus id ex suscipit, euismod dui sit amet, sagittis neque. Maecenas diam augue, interdum quis velit ut,
+            </p>
+            <button type="submit" class="btn btn-default">read more</button>
+        </div>
+    </div>
+</article>
+<article class="blog_feed media">
+    <div class="media-left">
+
+        <span class="data">25 AUG</span>
+        <span>
+            <img id="img3" src="images/blog3.jpg">
+        </span>
+    </div>
+    <div class="media-body">
+        <div class="media-content">
+            <h3>Vivamus finibus ante</h3>
+            <div class="media-write">
+                <a class="pull-right"><i class="fa fa-comments"></i>58 commets</a>
+                <a class="pull-right"><i class="fa fa-thumbs-o-up"></i>38 review</a>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non ligula quis orci dapibus efficitur.
+                Sed ex elit, ultrices et maximus consequat, porttitor a mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                Fusce non facilisis ipsudignissim orci dictum leo tempus, sit amet fringilla purus fringla.
+                Vivamus id ex suscipit, euismod dui sit amet, sagittis neque. Maecenas diam augue, interdum quis velit ut,
+            </p>
+            <button type="submit" class="btn btn-default">read more</button>
+        </div>
+    </div>
+</article>
+
+<script>
+    $('.media-left img').click(function(e){
+        if(e.target.id == 'img1'){
+            $('#hideb1').click();
+        } else if(e.target.id == 'img2'){
+            $('#hideb2').click();
+        } else {
+            $('#hideb3').click();
+        }
+        $('html, body').stop().animate({
+            'scrollTop': '0'
+        }, 800, 'swing');
+
+    })
+</script>

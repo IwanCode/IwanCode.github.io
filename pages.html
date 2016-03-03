@@ -26,22 +26,49 @@
                         </div>
 
                     </div>
-                </div>
-                <div class="d-goods-gallery row">
-                    <div class="gallery-content">
-                        <div ui-view class="new-content">
-                            <!-- content-->
+                    <div class="d-goods-gallery row">
+                        <div class="gallery-content">
+                            <div ui-view class="new-content">
+                                <!-- content-->
 
+
+                            </div>
+                        </div>
+                        <div class="d-goods-arrow">
 
                         </div>
                     </div>
-                    <div class="d-goods-arrow">
-
-                    </div>
                 </div>
+
 
             </div>
 
         </div>
     </div>
 </div>
+<script>
+    $('.left-header').find('a').click(function(e){
+        console.log(e.target.closest('a').id);
+        if(e.target.closest('a').id == 'grid1'){
+            $('#grid1').css({
+                'background-color': '#e77075',
+                'color': 'white'
+            });
+            $('#grid3').css({
+                'background': 'white',
+                'color': '#c2c2c2'
+            });
+
+        }
+        if(e.target.closest('a').id == 'grid3'){
+            $('#grid3').css({
+                'background-color': '#e77075',
+                'color': 'white'
+            });
+            $('#grid1').css({
+                'background': 'white',
+                'color': '#c2c2c2'
+            });
+        }
+    })
+</script>

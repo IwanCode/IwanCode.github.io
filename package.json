@@ -1,0 +1,29 @@
+{
+  "name": "diamondweb",
+  "version": "1.0.0",
+  "description": "This web application created by Ivan Okhrimenko ***this website require web server***",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-express": "^1.4.1",
+    "grunt-newer": "^1.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IwanCode/DiamondWeb.git"
+  },
+  "author": "Ivan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IwanCode/DiamondWeb/issues"
+  },
+  "homepage": "https://github.com/IwanCode/DiamondWeb#readme"
+}

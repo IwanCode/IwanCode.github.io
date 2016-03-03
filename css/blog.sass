@@ -1,0 +1,240 @@
+.blog
+  .blog-pg
+    #hideb1, #hideb2, #hideb3
+      display: none
+    header
+      text-align: center
+      position: relative
+      margin-top: 20px
+      margin-bottom: 20px
+      h2
+        margin: 0
+        display: inline-block
+        position: relative
+        font-family: $sansBold
+        font-size: 25px
+        color: #0a0a0a
+      h2:before, h2:after
+        content: ""
+        position: absolute
+        height: 50%
+        border-bottom: 2px solid #dadada
+        top: 0
+        width: 25px
+      h2:before
+        right: 100%
+        margin-right: 8px
+      h2:after
+        left: 100%
+        margin-left: 8px
+
+    .blog_feed
+      margin-bottom: 60px
+      .media-left
+        position: relative
+        .data
+          position: absolute
+          color: white
+          background-color: #7a7a7a
+          width: 42px
+          height: 42px
+          text-align: center
+          right: 10px
+          opacity: 0
+          transition: 0.4s
+        &:hover
+          .data
+            opacity: 1
+
+      .media-body
+        margin-left: 20px
+        .media-content
+          min-height: 310px
+          position: relative
+          padding: 0 20px
+          button
+            position: static
+        h3
+          margin-top: 0
+          font-size: 22px
+          font-family: $sansRegul, sans-serif
+          color: #2f2f2f
+        button
+          width: 180px
+          height: 40px
+          bottom: 0
+          font-family: "Open Sans Regular", sans-serif
+          text-transform: uppercase
+          color: #848484
+          background-color: white
+          border-radius: 25px
+          border-color: #dfdfdf
+          outline: none
+          position: absolute
+          transition: all 0.3s ease 0s
+          &:hover
+            background-color: #e77075
+            border-color: #e77075
+            color: white
+        .media-write
+          display: flex
+          margin-bottom: 15px
+          a
+            padding-right: 20px
+            color: #a8a8a8
+            text-decoration: none
+            &:hover
+              text-decoration: none
+              color: #a8a8a8
+              cursor: pointer
+            i
+              padding-right: 5px
+        p
+          color: #a8a8a8
+          margin-bottom: 25px
+          font-family: $sansRegul, sans-serif
+      .top_media_photo
+        padding-right: 20px
+        display: block
+        height: 340px
+        overflow: hidden
+        .data
+          right: 30px
+          top: 10px
+        img
+          width: 100%
+      .media_bar
+        margin-left: 0
+        display: block
+        width: 100%
+        .row-l
+          margin-left: -20px
+        h3
+          margin-top: 25px
+  .blog-menu
+    position: relative
+    .form-material
+      position: relative
+      margin-top: 20px
+      margin-bottom: 20px
+      label
+        position: absolute
+        left: 0
+        font-size: 14px
+        color: #757575
+        pointer-events: none
+        -webkit-transition: .3s ease all
+        -o-transition: .3s ease all
+        transition: .3s ease all
+      .floating-label
+        top: 8px
+        font-size: 14px
+      .form-control
+        color: #757575
+        background: transparent center bottom, center calc(100% - 1px) no-repeat
+        box-shadow: none
+        border: 0
+        border-bottom: 2px solid #e0e0e0
+        transition: box-shadow .25s linear,border .25s linear,color .25s linear,background-color .25s linear
+      .form-control~.floating-label
+        top: 8px
+        font-size: 14px
+      .form-control:not(select)
+        -webkit-appearance: none
+        -moz-appearance: none
+        appearance: none
+      .floating-label
+        position: absolute
+        left: 0
+        font-size: 14px
+        color: #757575
+        pointer-events: none
+        -webkit-transition: .3s ease all
+        -o-transition: .3s ease all
+        transition: .3s ease all
+        ~ a
+          color: black
+          position: absolute
+          right: 10px
+          top: 8px
+          transition: .3s ease all
+          opacity: 1
+      .form-control:focus
+        float: none
+        background-image: -webkit-gradient(linear,left top,left bottom,from(#3f51b5),to(#3f51b5)),-webkit-gradient(linear,left top,left bottom,from(#e0e0e0),to(#e0e0e0))
+        background-image: -webkit-linear-gradient(#3f51b5,#3f51b5),-webkit-linear-gradient(#e0e0e0,#e0e0e0)
+        background-image: -o-linear-gradient(#3f51b5,#3f51b5),-o-linear-gradient(#e0e0e0,#e0e0e0)
+        background-image: linear-gradient(#3f51b5,#3f51b5),linear-gradient(#e0e0e0,#e0e0e0)
+        border: 0
+        border-radius: 0
+        -webkit-box-shadow: none
+        box-shadow: none
+        -webkit-background-size: 100% 2px,100% 1px
+        background-size: 100% 2px,100% 1px
+        outline: 0
+        -webkit-transition-duration: .3s
+        -o-transition-duration: .3s
+        transition-duration: .3s
+        background: 0 0
+        border-bottom: 2px solid #3f51b5
+        ~ .floating-label
+          top: -11.2px
+          font-size: 11.2px
+        ~ a
+          opacity: 0
+
+
+      .form-control:not(.empty)~.floating-label
+        top: -11.2px
+        font-size: 11.2px
+      .form-control:-webkit-autofill~.floating-label
+        top: -11.2px
+        font-size: 11.2px
+  .blog_filter
+    .cf
+      > span
+        font-size: 18px
+        font-family: $sansBold
+        text-transform: uppercase
+        margin-top: 25px
+        margin-bottom: 9px
+        display: inline-block
+      ul
+        list-style: none
+        margin: 0
+        border: 0
+        padding: 0
+        li
+          padding-top: 13px
+          padding-bottom: 13px
+          border-bottom: 1px solid #e7e7e7
+          position: relative
+          display: flex
+          justify-content: space-between
+          align-items: center
+          span
+            color: #887f80
+          a
+            text-decoration: none
+            color: #887f80
+            text-transform: uppercase
+            font-size: 12px
+            .media
+              padding: 0
+
+            .media-body
+              color: #2f2f2f
+              font-family: $sansRegul, sans-serif
+              font-size: 14px
+              p
+                text-transform: none
+              time
+                font-family: $sansBold, sans-serif
+                font-size: 12px
+              .media-top
+                margin-bottom: 4px
+
+
+
+
+
