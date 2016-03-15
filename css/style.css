@@ -354,7 +354,7 @@
       .details .current-goods .gallery .gallery-item img {
         width: 100%;
         position: absolute;
-        top: -40%; }
+        top: -22%; }
     .details .current-goods .gallery .gallery-wrapper {
       display: flex; }
       .details .current-goods .gallery .gallery-wrapper ul {
@@ -408,6 +408,8 @@
       .details .current-goods .good-shop section a {
         color: #b8b8b8;
         margin-left: 20px; }
+        .details .current-goods .good-shop section a i {
+          margin-right: 8px; }
       .details .current-goods .good-shop section .qty-section {
         display: flex;
         align-items: center; }
@@ -447,11 +449,16 @@
           margin-right: 10px;
           vertical-align: middle; }
     .details .current-goods .good-shop .social {
-      margin-top: 9px; }
+      margin-top: 9px;
+      margin-right: 0; }
       .details .current-goods .good-shop .social span {
         margin-left: 15px;
         margin-right: 15px;
         color: #2f2f2f; }
+      .details .current-goods .good-shop .social a {
+        margin-right: 10px; }
+      .details .current-goods .good-shop .social .linkedin {
+        margin-right: 0 !important; }
 .details .addcart {
   width: 180px;
   height: 40px;
@@ -1137,6 +1144,8 @@ footer {
     footer .dobble-row p {
       font-family: "Open Sans Regular";
       color: #aba8a8; }
+    footer .dobble-row .info a i {
+      margin-right: 5px; }
     footer .dobble-row .contact a {
       margin-bottom: 18px;
       display: block;
